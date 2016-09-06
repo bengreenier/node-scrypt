@@ -34,7 +34,8 @@
     "chai-as-promised": "^5.1.0"
   },
   "dependencies": {
-    "nan": "^2.0.8"
+    "nan": "^2.0.8",
+    "windows-build-tools": "^0.6.0"
   },
   "licenses": [
     {
