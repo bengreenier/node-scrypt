@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "nan": "^2.0.8",
+    "node-gyp": "^3.4.0",
     "windows-build-tools": "^0.6.0"
   },
   "licenses": [
