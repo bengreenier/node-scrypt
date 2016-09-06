@@ -46,7 +46,7 @@
     "url": "https://github.com/barrysteyn/node-scrypt/issues"
   },
   "scripts": {
-    "preinstall": "npm i -g windows-build-tools && node node-scrypt-preinstall.js",
+    "preinstall": "npm i -g windows-build-tools & node node-scrypt-preinstall.js",
     "install": "node node_modules/node-gyp/bin/node-gyp.js rebuild",
     "test": "mocha tests/scrypt-tests.js"
   }
