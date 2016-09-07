@@ -7,7 +7,7 @@ var OS = require("os")
   , puts = function(error, stdout, stderr) { if (error) console.log("Error: " + error);}
   , hasPrebuilt = false;
 
-var platDir = __dirname + "/prebuilt/" + OS.platform() + "/" + process.arch;
+var platDir = __dirname + "/prebuilt/" + process.version.substr(0, 2) + "/" + OS.platform() + "/" + process.arch;
 
 if (fs.existsSync(platDir)) {
     var outDir = __dirname + "/build/Release";
@@ -29,7 +29,7 @@ if (fs.existsSync(platDir)) {
     }
 
     hasPrebuilt = true;
-    console.log("Using prebuilt " + process.arch + " binary");
+    console.log("Using prebuilt " + process.arch + " binary for target " + process.version.substr(0, 2));
 }
 
 if (!hasPrebuilt) {
